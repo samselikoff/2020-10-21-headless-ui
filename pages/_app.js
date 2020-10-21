@@ -4,12 +4,12 @@ import "../server";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen mx-auto text-base text-gray-900 bg-cool-gray-200 xs:py-8">
-      <div
-        className="relative flex flex-col flex-1 w-full overflow-hidden bg-white shadow xs:max-w-sm"
-        style={{ maxHeight: 812 }}
-      >
-        <header className="flex items-center px-4 py-3 border-b">
+    <div
+      className="flex flex-col items-center justify-center w-screen h-screen mx-auto text-base text-cool-gray-900 xs:py-8"
+      style={{ backgroundColor: "#20252C" }}
+    >
+      <div className="relative flex flex-col flex-1 w-full overflow-hidden bg-white border-cool-gray-200 xs:max-w-xl">
+        <header className="flex items-center px-4 py-3 border-b-4 border-cool-gray-200">
           <img
             className="rounded-full w-7 h-7"
             src="http://twivatar.glitch.me/samselikoff"
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </main>
 
-        <footer className="flex border-t border-gray-200">
+        <footer className="flex border-t border-cool-gray-200">
           <Link
             href="/"
             className="flex items-center justify-center w-1/4 py-3"
@@ -30,43 +30,43 @@ function MyApp({ Component, pageProps }) {
               isActive ? (
                 <HomeIcon className="p-px text-blue-500 w-7 h-7" />
               ) : (
-                <HomeIconEmpty className="p-px text-gray-500 w-7 h-7" />
+                <HomeIconEmpty className="p-px text-cool-gray-500 w-7 h-7" />
               )
             }
           </Link>
           <Link
             href="/explore"
-            className="flex items-center justify-center w-1/4 py-3 text-gray-500"
+            className="flex items-center justify-center w-1/4 py-3 text-cool-gray-500"
           >
             {({ isActive }) =>
               isActive ? (
                 <SearchIcon className="p-px text-blue-500 w-7 h-7" />
               ) : (
-                <SearchIconEmpty className="p-px text-gray-500 w-7 h-7" />
+                <SearchIconEmpty className="p-px text-cool-gray-500 w-7 h-7" />
               )
             }
           </Link>
           <Link
             href="/notifications"
-            className="flex items-center justify-center w-1/4 py-3 text-gray-500"
+            className="flex items-center justify-center w-1/4 py-3 text-cool-gray-500"
           >
             {({ isActive }) =>
               isActive ? (
                 <BellIcon className="p-px text-blue-500 w-7 h-7" />
               ) : (
-                <BellIconEmpty className="p-px text-gray-500 w-7 h-7" />
+                <BellIconEmpty className="p-px text-cool-gray-500 w-7 h-7" />
               )
             }
           </Link>
           <Link
             href="/messages"
-            className="flex items-center justify-center w-1/4 py-3 text-gray-500"
+            className="flex items-center justify-center w-1/4 py-3 text-cool-gray-500"
           >
             {({ isActive }) =>
               isActive ? (
                 <MailboxIcon className="p-px text-blue-500 w-7 h-7" />
               ) : (
-                <MailboxIconEmpty className="p-px text-gray-500 w-7 h-7" />
+                <MailboxIconEmpty className="p-px text-cool-gray-500 w-7 h-7" />
               )
             }
           </Link>
