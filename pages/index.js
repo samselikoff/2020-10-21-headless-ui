@@ -11,7 +11,10 @@ function Home() {
   return (
     <div>
       {[...data.tweets].reverse().map((tweet) => (
-        <div className="px-4 pt-3 pb-1 border-b border-cool-gray-200">
+        <div
+          key={tweet.id}
+          className="px-4 pt-3 pb-1 border-b border-cool-gray-200"
+        >
           <div className="flex">
             {/* Avatar */}
             <img
@@ -45,16 +48,16 @@ function Home() {
 
               {/* Icon bar */}
               <div className="flex justify-between max-w-sm mt-1 text-cool-gray-500">
-                <button className="p-2 transition duration-150 ease-in-out rounded-full focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
+                <button className="p-2 transition duration-150 ease-in-out rounded-full hover:bg-blue-100 hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
                   <CommentIcon />
                 </button>
-                <button className="p-2 transition duration-150 ease-in-out rounded-full focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
+                <button className="p-2 transition duration-150 ease-in-out rounded-full hover:bg-blue-100 hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
                   <RetweetIcon />
                 </button>
-                <button className="p-2 transition duration-150 ease-in-out rounded-full focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
+                <button className="p-2 transition duration-150 ease-in-out rounded-full hover:bg-blue-100 hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
                   <HeartIcon />
                 </button>
-                <button className="p-2 transition duration-150 ease-in-out rounded-full focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
+                <button className="p-2 transition duration-150 ease-in-out rounded-full hover:bg-blue-100 hover:text-blue-500 focus:bg-blue-100 focus:text-blue-500 focus:outline-none">
                   <ShareIcon />
                 </button>
               </div>
