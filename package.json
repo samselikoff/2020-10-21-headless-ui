@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^0.2.0",
     "@tailwindcss/ui": "^0.3.1",
     "date-fns": "^2.15.0",
     "faker": "^4.1.0",
+    "framer-motion": "^2.9.4",
     "miragejs": "^0.1.40",
     "next": "9.4.4",
     "postcss-preset-env": "^6.7.0",
